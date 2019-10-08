@@ -1,0 +1,22 @@
+:root {
+  --clr-primary: hsl(223, 87%, 63%);
+  --clr-secondary-pale: hsl(223, 100%, 88%);
+  --clr-secondary-light: hsl(354, 100%, 66%);
+  --clr-neutral: hsl(0, 0%, 59%);
+  --clr-neutral-dark: hsl(209, 33%, 12%);
+  --font-size: 20px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: var(--font-size);
+  font-family: 'Libre Franklin', sans-serif;
+  line-height: 1.6;
+}
