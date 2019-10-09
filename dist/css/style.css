@@ -1,10 +1,10 @@
+/* Mobile first */
 :root {
   --clr-primary: hsl(223, 87%, 63%);
   --clr-secondary-pale: hsl(223, 100%, 88%);
   --clr-secondary-light: hsl(354, 100%, 66%);
   --clr-neutral: hsl(0, 0%, 59%);
   --clr-neutral-dark: hsl(209, 33%, 12%);
-  --font-size: 20px;
 }
 
 *,
@@ -16,7 +16,125 @@
 }
 
 body {
-  font-size: var(--font-size);
+  color: var(--clr-neutral-dark);
   font-family: 'Libre Franklin', sans-serif;
   line-height: 1.6;
+}
+
+img {
+  width: 100%;
+}
+
+/* Main */
+.container {
+  margin: 11vh auto;
+  max-width: 375px;
+  overflow: hidden;
+}
+
+.logo,
+.container p {
+  margin-bottom: 3rem;
+}
+
+.title {
+  margin-bottom: 1rem;
+}
+
+.title span {
+  color: var(--clr-neutral);
+  font-weight: 300;
+}
+
+.form {
+  text-align: center;
+  width: 90%;
+}
+
+.form-email {
+  all: unset;
+  border: 1px solid var(--clr-secondary-pale);
+  border-radius: 30px;
+  box-sizing: border-box;
+  color: var(--clr-neutral-dark);
+  display: inline-block;
+  font-size: inherit;
+  font-weight: 300;
+  /* width: 100%; */
+  outline: 0;
+  padding: 0.8rem 1.5rem;
+}
+
+::placeholder {
+  color: var(--clr-secondary-pale);
+}
+
+.container .btn {
+  margin-bottom: 4rem;
+}
+
+/* Utility class */
+.btn {
+  all: unset;
+  background-color: var(--clr-primary);
+  border-radius: 30px;
+  box-shadow: 0px 10px 28px -4px rgba(194, 211, 255, 1);
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  margin-top: 1rem;
+  padding: 0.8rem 1.5rem;
+  position: relative;
+  text-align: center;
+}
+
+.btn:hover {
+  background-color: var(--clr-secondary-pale);
+}
+
+.btn:active {
+  top: 2px;
+}
+
+.circle-icon {
+  border: 1px solid var(--clr-secondary-pale);
+  border-radius: 50%;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  width: 30px;
+}
+
+.circle-icon:hover {
+  cursor: pointer;
+  background-color: var(--clr-secondary-pale);
+}
+
+.error-msg {
+  color: var(--clr-secondary-light);
+  display: block;
+  align-self: flex-start;
+}
+
+.invalid {
+  border: 1px solid var(--clr-secondary-light);
+}
+
+/* Footer */
+.social {
+  color: var(--clr-primary);
+}
+
+.social > i:not(:last-child) {
+  margin-right: 1rem;
+}
+
+i.fab:hover {
+  color: #fff;
+}
+
+.footer p {
+  color: var(--clr-neutral);
+  margin-top: 2rem;
 }

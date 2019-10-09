@@ -1,0 +1,12 @@
+.container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: stretch;
+}
