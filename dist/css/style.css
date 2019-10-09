@@ -57,7 +57,7 @@ img {
   border-radius: 30px;
   box-sizing: border-box;
   color: var(--clr-neutral-dark);
-  display: inline-block;
+  display: block;
   font-size: inherit;
   font-weight: 300;
   /* width: 100%; */
@@ -137,4 +137,14 @@ i.fab:hover {
 .footer p {
   color: var(--clr-neutral);
   margin-top: 2rem;
+}
+
+@media only screen and (min-width: 1445px) {
+  .container {
+    max-width: 800px;
+  }
+
+  .container .btn {
+    margin: 0;
+  }
 }

@@ -18,16 +18,6 @@ p {
   font-size: var(--small-text);
 }
 
-:root {
-  --base-size: 1.25em;
-  --type-scale: 1.2;
-  --h3: calc(var(--base-size) * var(--type-scale));
-  --h2: calc(var(--h3) * var(--type-scale));
-  --h1: calc(var(--h2) * var(--type-scale));
-  --small-text: calc(var(--base-size) / var(--type-scale));
-  --very-small-text: calc(var(--small-text) / var(--type-scale));
-}
-
 h1 {
   font-size: var(--h1);
 }
@@ -50,4 +40,10 @@ p {
 
 .very-small-text {
   font-size: var(--very-small-text);
+}
+
+@media only screen and (min-width: 1445px) {
+  :root {
+    --type-scale: 1.25;
+  }
 }
