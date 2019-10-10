@@ -1,9 +1,9 @@
 :root {
   --base-size: 1.25rem;
-  --type-scale: 1.2;
-  --h2: calc(var(--base-size) * var(--type-scale));
   --h1: calc(var(--h2) * var(--type-scale));
+  --h2: calc(var(--base-size) * var(--type-scale));
   --small-text: calc(var(--base-size) / var(--type-scale));
+  --type-scale: 1.2;
 }
 
 h1 {

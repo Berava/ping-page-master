@@ -11,11 +11,11 @@
   justify-items: stretch;
 }
 
-@media only screen and (min-width: 1445px) {
+@media only screen and (min-width: 1024px) {
   .form {
+    grid-gap: 0 1rem;
     grid-template-columns: repeat(3, 1fr);
     /* grid-template-rows: 50px; */
-    grid-gap: 1rem;
   }
 
   .form-email {
